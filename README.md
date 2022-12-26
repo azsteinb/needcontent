@@ -1,9 +1,12 @@
 # Need Content System
-[About](#About)  
-[Dependencies](#Dependencies)  
-[License, Creator, and Contact Information](#License,-Creator,-and-Contact-Information)  
-[Installation](#Installation)  
-[Basic Usage](#Basic-Usage)
+### Sections:
+* [About](#about)  
+* [Dependencies](#dependencies)  
+* [License, Creator, and Contact Information](#license-creator-and-contact-information)  
+* [Installation](#installation)  
+* [Basic Usage](#basic-usage)  
+* [Configuring your Website](#configuring-your-website)  
+* [Creating Content](#creating-content)
 ## About
 Need Content System is a lightweight and easy to use content management system for quickly compiling markdown into a static, easy-to-use, easy-to-view, and browsable web app.  
 Need Content System, or NCS or Need for short, can be used for research articles, blogs, short stories, design documents, or anything else.  
