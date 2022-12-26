@@ -1,7 +1,7 @@
-# Need Framework
+# Need Content System
 ## About
-Need Framework is a lightweight and easy to use CMS for quickly compiling markdown, text, and pdf documents into a static, easy-to-use, easy-to-view, and browsable web app.  
-Need Framework can be used for research articles, blogs, short stories, design documents, or anything else.  
+Need Content System is a lightweight and easy to use content management system for quickly compiling markdown into a static, easy-to-use, easy-to-view, and browsable web app.  
+Need Content System, or NCS or Need for short, can be used for research articles, blogs, short stories, design documents, or anything else.  
 More information is available at https://need.cab
 #
 ## Dependencies
@@ -25,7 +25,7 @@ More information is available at https://need.cab
 ```cd [project_name]```
 	* Within this directory, you will find the following files:
 		### Editable Files: 
-		* README.md - A template for a Need Framework project
+		* README.md - A template for a Need project
 		* config.yaml - Configuration File
 		* sources/ - Directory containing user-made source files used to generate website
 		### Non Editable Files:
@@ -46,7 +46,7 @@ The default config.yaml looks like this:
 ```yaml
 # Required Settings:
 
-title: My Need Framework Project
+title: My Need Content System Project
 author: John Smith
 url: localhost
 global-font-size: 1rem
