@@ -104,14 +104,14 @@ You can access global constants defined in the config file. For example, the tit
 ```yaml
 {{
 need: {
-	content_type: 'page',
-	title: 'Contact',
-	full-name: 'Bobby Robert',
-	phone-number: '310-555-5555',
-	image-path: '../assets/headshot.jpg',
-	text-align: 'center',
-	enable: true,
-	inherit-global-constants: true,
+content_type: 'page',
+title: 'Contact',
+full-name: 'Bobby Robert',
+phone-number: '310-555-5555',
+image-path: '../assets/headshot.jpg',
+text-align: 'center',
+enable: true,
+inherit-global-constants: true,
 }
 }}
 # Contact Information
