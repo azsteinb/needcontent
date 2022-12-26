@@ -1,0 +1,17 @@
+{{
+need: {
+	content_type: 'page',
+	title: 'Contact',
+	example-constant: 'example',
+	text-align: 'left',
+	enable: true,
+	inherit-global-constants: true,
+}
+}}
+# {{title}}
+Welcome to the {{title}} page. You can use markdown syntax freely.
+## Local Constants:
+You can use defined constants such as {{example_constant}}. Is this page enabled?  
+{{enable ? 'yes it is' : 'no it is not'}}.
+## Global Constants:
+You can access global constants defined in the config file. For example, the title of the website is {{global.title}}. The author of the website is {{global.author}}
