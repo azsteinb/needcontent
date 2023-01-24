@@ -7,5 +7,5 @@ setup(
   author='Aaron Steinberg',
   author_email='aaron@aa.codes',
   packages=['need'],
-  install_requires=[],
+  install_requires=['Markdown'],
 )

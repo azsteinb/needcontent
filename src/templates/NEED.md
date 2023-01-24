@@ -34,7 +34,7 @@ More information is available at https://need.cab
 ```cd [project_name]```
 	* Within this directory, you will find the following files:
 		### Editable Files: 
-		* NEED.md - A copy of this file
+		* README.md - A template for a Need project
 		* config.yaml - Configuration File
 		* sources/ - Directory containing user-made source files used to generate website
 		### Non Editable Files:
