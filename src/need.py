@@ -25,41 +25,39 @@ def create(project_name, author_name):
     try:
         os.mkdir(project_name)
     except:
-        print("An error has occured while creating the project")
+        print("An error has occurred while creating the project")
         return
     # Status Update
     print("Created Directory: " + project_name)
     print("Populating Directory...")
     # Get the file path of the script
     # Get the file path of the script
-    script_src_path = os.path.dirname
-    (os.path.abspath(__file__))
+    script_src_path = os.path.dirname(os.path.abspath(__file__))
 
-    templates_dir_path = os.path.join
-    (script_src_path, "templates")
+    templates_dir_path = os.path.join(script_src_path, "templates")
 
     up_dir_path = os.path.join("..", script_src_path)
 
-    config_path = os.path.join
-    (templates_dir_path, "config.yaml")
+    config_path = os.path.join(templates_dir_path, "config.yaml")
 
-    license_path = os.path.join
-    (templates_dir_path, "LICENSE")
+    license_path = os.path.join(templates_dir_path, "LICENSE")
 
-    readme_path = os.path.join
-    (templates_dir_path, "README.md")
+    readme_path = os.path.join(templates_dir_path, "README.md")
+    
+    project_path = os.path.join(os.getcwd(), project_name)
     print(up_dir_path)
     # Populate directory with template files
     # config.yaml
-    shutil.copy(config_path,
-    os.path.join(os.getcwd(), project_name))
+    shutil.copy(config_path, project_path)
     # sources directory
     os.mkdir(project_name+"/sources")
     # license
-    license_map = {'{{author_name}}': author_name, '{{year}}': datetime.datetime.utcnow().year}
-    templater(license_path, license_map, os.path.join(os.getcwd(), 'LICENSE'))
+    license_map = {'{{author_name}}': author_name, '{{year}}': str(datetime.datetime.utcnow().year)}
+    for k in license_map.keys():
+        print(k)
+    templater(license_path, license_map, os.path.join(project_path, "LICENSE"))
     # readme
-    shutil.copy(readme_path, )
+    shutil.copy(readme_path, project_path)
 
 
     print("Finished! Project Created")

@@ -12,7 +12,7 @@ def templater(template_file_path, replacement_map, output_file_path):
             chunk = f.read(chunk_size) # read in the chunk
             if not chunk: # check if anything was read
                 break
-            for key in replacement_map.keys: # for each key, replace it
+            for key in replacement_map.keys(): # for each key, replace it
                 chunk = chunk.replace(key, replacement_map[key])
             with open(output_file_path, "a") as output:
                 output.write(chunk)  # append the chunk to the output file
